@@ -10,14 +10,14 @@
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-      background-image: url('https://img.freepik.com/free-vector/blue-copy-space-digital-background_23-2148821698.jpg?t=st=1728962915~exp=1728963515~hmac=97303659c91522435ab426ffbed7a47ebf73cf2fb145a099935f4a1409971440'); /* Background image */
-      background-size: cover; /* C"over the entire viewport */
+      background-image: url('https://img.freepik.com/free-vector/blue-copy-space-digital-background_23-2148821698.jpg'); /* Background image */
+      background-size: cover; /* Cover the entire viewport */
       background-position: center; /* Center the image */
     }
 
     /* Navbar */
     .navbar {
-      background-color: #343a40;
+      background-color: rgba(52, 58, 64, 0.8);
       padding: 15px;
       display: flex;
       justify-content: space-between;
@@ -42,19 +42,18 @@
       display: flex;
       justify-content: center;
       align-items: center;
-      background-color: #f8f9fa;
       text-align: center;
-      padding: 20px;
+      background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
+      color: white;
     }
     h1 {
-      color: #343a40;
       font-size: 48px;
     }
 
     /* About Us Section */
     .about-us {
       padding: 60px 20px;
-      background-color: #ffffff;
+      background-color: #f8f9fa; /* Light background */
       text-align: center;
     }
     .about-us h2 {
@@ -66,31 +65,10 @@
       margin: auto;
     }
 
-    /* Join Us Section */
-    .join-us {
-      padding: 60px 20px;
-      background-color: #f4f4f4;
-      text-align: center;
-    }
-    .join-us h2 {
-      color: #343a40;
-    }
-    .join-us button {
-      padding: 10px 20px;
-      background-color: #28a745;
-      border: none;
-      color: white;
-      border-radius: 4px;
-      cursor: pointer;
-    }
-    .join-us button:hover {
-      background-color: #218838;
-    }
-
     /* Contact Us Section */
     .contact-us {
       padding: 60px 20px;
-      background-color: #ffffff;
+      background-color: #e9ecef; /* Gray background */
       text-align: center;
     }
     .contact-us h2 {
@@ -120,6 +98,21 @@
       background-color: #0056b3;
     }
 
+    /* Logout Section */
+    .logout {
+      padding: 60px 20px;
+      background-color: #343a40; /* Dark background */
+      color: white;
+      text-align: center;
+    }
+    .logout h2 {
+      color: #ffffff;
+    }
+    .logout a {
+      color: #ffffff;
+      text-decoration: underline;
+    }
+
     /* Footer */
     footer {
       background-color: #343a40;
@@ -139,9 +132,8 @@
     <div class="menu">
       <a href="#home">Home</a>
       <a href="#about-us">About Us</a>
-      <a href="#join-us">Join Us</a>
       <a href="#contact-us">Contact Us</a>
-      <a href="login.html">Logout</a>
+      <a href="#logout">Logout</a>
     </div>
   </div>
 
@@ -155,13 +147,7 @@
   <!-- About Us Section --> 
   <div class="about-us" id="about-us">
     <h2>About Us</h2>
-    
-  </div>
-
-  <!-- Join Us Section -->
-  <div class="join-us" id="join-us">
-    <h2>Join Us</h2>
-    <button>Apply Now</button>
+    <p>Welcome to our website! We are dedicated to providing the best service possible.</p>
   </div>
 
   <!-- Contact Us Section -->
@@ -173,6 +159,12 @@
       <textarea rows="5" placeholder="Your Message" required></textarea>
       <button type="submit">Submit</button>
     </form>
+  </div>
+
+  <!-- Logout Section -->
+  <div class="logout" id="logout">
+    <h2>You are logged out</h2>
+    <p><a href="login.html">Click here to log in again</a></p>
   </div>
 
   <!-- Footer -->
